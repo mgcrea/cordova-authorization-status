@@ -28,15 +28,15 @@ Using this plugin requires [Cordova iOS](https://github.com/apache/incubator-cor
         console.warn("granted=%d", granted);
     });
 
-* Check [source](https://github.com/mgcrea/cordova-authorizationstatus/tree/master/www/AuthorizationStatus.js) for additional configuration.
+* Check [source](https://github.com/mgcrea/cordova-authorization-status/tree/master/www/AuthorizationStatus.js) for additional configuration.
 
 ## BUGS AND CONTRIBUTIONS ##
 
 Patches welcome! Send a pull request. Since this is not a part of Cordova Core (which requires a CLA), this should be easier.
 
-Post issues on [Github](https://github.com/mgcrea/cordova-authorizationstatus/issues)
+Post issues on [Github](https://github.com/mgcrea/cordova-authorization-status/issues)
 
-The latest code (my fork) will always be [here](https://github.com/mgcrea/cordova-authorizationstatus/tree/master)
+The latest code (my fork) will always be [here](https://github.com/mgcrea/cordova-authorization-status/tree/master)
 
 ## LICENSE ##
 

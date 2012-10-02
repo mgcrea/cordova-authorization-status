@@ -1,3 +1,0 @@
-[submodule "cordova/cordova-ios"]
-	path = cordova/cordova-ios
-	url = git://github.com/apache/incubator-cordova-ios.git
