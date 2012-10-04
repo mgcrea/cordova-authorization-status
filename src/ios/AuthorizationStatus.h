@@ -20,5 +20,6 @@
 #pragma mark - Instance methods
 
 - (void)addressBookGetAuthorizationStatus:(CDVInvokedUrlCommand*)command;
+- (void)addressBookAskAuthorization:(CDVInvokedUrlCommand*)command;
 
 @end
