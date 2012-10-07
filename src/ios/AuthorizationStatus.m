@@ -36,10 +36,12 @@
 	if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusNotDetermined) {
 		// Request authorization
 		ABAddressBookRequestAccessWithCompletion(addressBookRef, ^(bool granted, CFErrorRef error) {
-			// Create Plugin Result
-			CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:granted*1];
-			// Call  the Success Javascript function
-			[self writeJavascript: [pluginResult toSuccessCallbackString:self.callbackId]];
+			dispatch_async(dispatch_get_main_queue(), ^{
+				// Create Plugin Result
+				CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:granted*1];
+				// Call  the Success Javascript function
+				[self writeJavascript: [pluginResult toSuccessCallbackString:self.callbackId]];
+			});
 		});
 	} else if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusAuthorized) {
 		// Create Plugin Result
